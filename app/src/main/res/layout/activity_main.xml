@@ -101,15 +101,34 @@
         </LinearLayout>
 
         <!--Bob The Blob-->
+
+        <!--The Above The V V V V Thing-->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:orientation="vertical">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </Space>
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="370dp"
+                android:layout_height="370dp"
+                android:layout_gravity="center"
+                />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </Space>
         </LinearLayout>
 
-        <!--The Above The V V V V Thing-->
         <LinearLayout
             android:id="@+id/TextAboveV"
             android:layout_width="match_parent"

@@ -1,10 +1,12 @@
 package com.example.bobtheblob;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.VideoView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     TextView text1, text2, text3, text4;
     LinearLayout background;
     int page = 1;
+    VideoView video;
 
     //Status
     ProgressBar HungerBar, HygeineBar, FunBar, EnergyBar;
@@ -40,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
         text2 = findViewById(R.id.TextTwo);
         text3 = findViewById(R.id.TextThree);
         text4 = findViewById(R.id.TextFour);
+
+        video = findViewById(R.id.videoView);
 
         //Background
         background = findViewById(R.id.roomchange);
@@ -121,6 +126,10 @@ public class MainActivity extends AppCompatActivity {
 
                 HungerBar.setProgress(Hunger);
                 HygeineBar.setProgress(Hygeine);
+
+                //bird
+                video.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" +R.raw.bird));
+                video.start();
                 break;
             case 2:
                 //Pet
@@ -133,6 +142,10 @@ public class MainActivity extends AppCompatActivity {
                 HygeineBar.setProgress(Hygeine);
                 FunBar.setProgress(Fun);
                 EnergyBar.setProgress(Energy);
+
+                //dog
+                video.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" +R.raw.dog));
+                video.start();
                 break;
             case 3:
                 //Mold
@@ -143,6 +156,10 @@ public class MainActivity extends AppCompatActivity {
                 HungerBar.setProgress(Hunger);
                 HygeineBar.setProgress(Hygeine);
                 EnergyBar.setProgress(Energy);
+
+                //slap
+                video.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" +R.raw.slap));
+                video.start();
                 break;
             case 4:
                 //Music
@@ -155,6 +172,10 @@ public class MainActivity extends AppCompatActivity {
                 HygeineBar.setProgress(Hygeine);
                 FunBar.setProgress(Fun);
                 EnergyBar.setProgress(Energy);
+
+                //dmca
+                video.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" +R.raw.dmca));
+                video.start();
                 break;
         }
 
@@ -187,6 +208,10 @@ public class MainActivity extends AppCompatActivity {
 
                 HungerBar.setProgress(Hunger);
                 HygeineBar.setProgress(Hygeine);
+
+                //onion ring
+                video.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" +R.raw.onionring));
+                video.start();
                 break;
             case 2:
                 //Feather
@@ -199,6 +224,10 @@ public class MainActivity extends AppCompatActivity {
                 HygeineBar.setProgress(Hygeine);
                 FunBar.setProgress(Fun);
                 EnergyBar.setProgress(Energy);
+
+                //dance
+                video.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" +R.raw.dance));
+                video.start();
                 break;
             case 3:
                 //Powder
@@ -210,6 +239,9 @@ public class MainActivity extends AppCompatActivity {
                 HygeineBar.setProgress(Hygeine);
                 EnergyBar.setProgress(Energy);
 
+                //jaw
+                video.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" +R.raw.jaw));
+                video.start();
                 break;
             case 4:
                 //Cradle
@@ -222,6 +254,10 @@ public class MainActivity extends AppCompatActivity {
                 HygeineBar.setProgress(Hygeine);
                 FunBar.setProgress(Fun);
                 EnergyBar.setProgress(Energy);
+
+                //miku
+                video.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" +R.raw.miku));
+                video.start();
                 break;
         }
 
@@ -251,6 +287,10 @@ public class MainActivity extends AppCompatActivity {
             Hygeine = 10;
             Fun = 10;
             Energy = 100;
+
+            //substitute
+            video.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" +R.raw.substitute));
+            video.start();
 
             //Dimming the lights. Sleeping Time.
             HungerBar.setProgress(Hunger);
