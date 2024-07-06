@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/menu"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
@@ -19,10 +19,9 @@
         android:layout_weight="1"
         android:layout_gravity="center"
         android:orientation="vertical"
-        android:background="@drawable/linear_layout_base"
+        android:background="@color/Color1"
         >
 
-        <!--Bob's Status-->
         <LinearLayout
             android:layout_width="380dp"
             android:layout_height="wrap_content"
@@ -34,85 +33,7 @@
                 android:layout_height="10dp"
                 android:layout_weight="1">
             </Space>
-
-            <!--Hunger-->
-            <TextView
-                android:id="@+id/Score"
-                android:layout_width="168dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/anonymous_pro"
-                android:text="Score:"
-                android:textColor="@color/Color1"
-                android:textStyle="bold"
-                />
-
-            <TextView
-                android:id="@+id/Fun"
-                android:layout_width="168dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/anonymous_pro"
-                android:text="Fun"
-                android:textColor="@color/Color1"
-                android:textStyle="bold" />
-
-            <ProgressBar
-                android:id="@+id/progressBarfun"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="170dp"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/anonymous_pro"
-                android:text="Hunger"
-                android:textStyle="bold"
-                android:textColor="@color/Color1" />
-            <ProgressBar
-                android:id="@+id/progressBarhunger"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="170dp"
-                android:layout_height="wrap_content" />
-
-            <!--Hygiene-->
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/anonymous_pro"
-                android:text="Hygiene"
-                android:textStyle="bold"
-                android:textColor="@color/Color1" />
-            <ProgressBar
-                android:id="@+id/progressBarhygiene"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="170dp"
-                android:layout_height="wrap_content" />
-
-            <!--Fun-->
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/anonymous_pro"
-                android:text="Energy"
-                android:textColor="@color/Color1"
-                android:textStyle="bold" />
-
-            <ProgressBar
-                android:id="@+id/progressBarenergy"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="170dp"
-                android:layout_height="wrap_content" />
-
-            <!--Energy-->
-
         </LinearLayout>
-
-        <!--Bob The Blob-->
-
-        <!--The Above The V V V V Thing-->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -122,21 +43,25 @@
             android:orientation="vertical">
 
             <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
                 android:layout_weight="1">
             </Space>
-            <VideoView
-                android:id="@+id/videoView"
-                android:layout_width="370dp"
-                android:layout_height="230dp"
-                android:layout_gravity="center"
-                />
+
+            <!--TO BE UPDATED OK.-->
+            <ImageView
+                android:id="@+id/ImageMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/main" />
+
             <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
                 android:layout_weight="1">
             </Space>
+
         </LinearLayout>
 
         <LinearLayout
@@ -157,10 +82,10 @@
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/anonymous_pro"
-                android:text="Text 1"
+                android:text="Exit Game"
                 android:textAlignment="center"
                 android:textStyle="bold"
-                android:textColor="@color/Color1" />
+                android:textColor="@color/Color5" />
             <Space
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -174,10 +99,10 @@
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/anonymous_pro"
-                android:text="Text 2"
+                android:text="Play Game"
                 android:textAlignment="center"
                 android:textStyle="bold"
-                android:textColor="@color/Color1" />
+                android:textColor="@color/Color5" />
             <Space
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -191,10 +116,10 @@
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/anonymous_pro"
-                android:text="Text 3"
+                android:text="Intro"
                 android:textAlignment="center"
                 android:textStyle="bold"
-                android:textColor="@color/Color1" />
+                android:textColor="@color/Color5" />
             <Space
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -208,10 +133,10 @@
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/anonymous_pro"
-                android:text="Text 4"
+                android:text="Credits"
                 android:textAlignment="center"
                 android:textStyle="bold"
-                android:textColor="@color/Color1" />
+                android:textColor="@color/Color5" />
             <Space
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -241,7 +166,7 @@
                 android:text="V"
                 android:textAlignment="center"
                 android:textStyle="bold"
-                android:textColor="@color/Color1" />
+                android:textColor="@color/Color5" />
             <Space
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -257,7 +182,7 @@
                 android:text="V"
                 android:textAlignment="center"
                 android:textStyle="bold"
-                android:textColor="@color/Color1" />
+                android:textColor="@color/Color5" />
             <Space
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -273,7 +198,7 @@
                 android:text="V"
                 android:textAlignment="center"
                 android:textStyle="bold"
-                android:textColor="@color/Color1" />
+                android:textColor="@color/Color5" />
             <Space
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -289,7 +214,7 @@
                 android:text="V"
                 android:textAlignment="center"
                 android:textStyle="bold"
-                android:textColor="@color/Color1" />
+                android:textColor="@color/Color5" />
             <Space
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -317,13 +242,13 @@
 
         <!--Button1-->
         <Button
-            android:id="@+id/ButtonOne"
+            android:id="@+id/Exit"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:background="@drawable/button_design"
-            android:onClick="ButtonOne"
+            android:onClick="Exit"
             />
         <Space
             android:layout_width="wrap_content"
@@ -333,13 +258,13 @@
 
         <!--Button2-->
         <Button
-            android:id="@+id/ButtonTwo"
+            android:id="@+id/Play"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:background="@drawable/button_design"
-            android:onClick="ButtonTwo"
+            android:onClick="Play"
             />
         <Space
             android:layout_width="wrap_content"
@@ -349,13 +274,13 @@
 
         <!--Button3-->
         <Button
-            android:id="@+id/ButtonThree"
+            android:id="@+id/Intro"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:background="@drawable/button_design"
-            android:onClick="ButtonThree"
+            android:onClick="Intro"
             />
         <Space
             android:layout_width="wrap_content"
@@ -365,13 +290,13 @@
 
         <!--Button4-->
         <Button
-            android:id="@+id/ButtonFour"
+            android:id="@+id/Credits"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:background="@drawable/button_design"
-            android:onClick="ButtonFour"
+            android:onClick="Credits"
             />
         <Space
             android:layout_width="wrap_content"
