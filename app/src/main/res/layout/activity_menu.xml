@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:background="@color/Color1"
+    >
+
+    <!--The Game Screen-->
+    <LinearLayout
+        android:id="@+id/roomchange"
+        android:layout_width="400dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@color/Color1"
+        >
+
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_weight="1">
+            </Space>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1">
+            </Space>
+
+            <!--TO BE UPDATED OK.-->
+            <ImageView
+                android:id="@+id/ImageMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/main" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1">
+            </Space>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/TextAboveV"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </Space>
+
+            <!--TextOne-->
+            <TextView
+                android:id="@+id/TextOne"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/anonymous_pro"
+                android:text="Exit Game"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/Color5" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </Space>
+
+            <!--TextTwo-->
+            <TextView
+                android:id="@+id/TextTwo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/anonymous_pro"
+                android:text="Play Game"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/Color5" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </Space>
+
+            <!--TextThree-->
+            <TextView
+                android:id="@+id/TextThree"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/anonymous_pro"
+                android:text="Intro"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/Color5" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </Space>
+
+            <!--TextFour-->
+            <TextView
+                android:id="@+id/TextFour"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/anonymous_pro"
+                android:text="Credits"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/Color5" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </Space>
+
+        </LinearLayout>
+
+        <!--The V V V V Thing-->
+        <LinearLayout
+            android:id="@+id/TextV"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </Space>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/anonymous_pro"
+                android:text="V"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/Color5" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </Space>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/anonymous_pro"
+                android:text="V"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/Color5" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </Space>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/anonymous_pro"
+                android:text="V"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/Color5" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </Space>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/anonymous_pro"
+                android:text="V"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/Color5" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </Space>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--The Buttons-->
+    <LinearLayout
+        android:id="@+id/ButtonPanel"
+        android:layout_width="400dp"
+        android:layout_height="115dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="@drawable/linear_layout_buttonbase">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50">
+        </Space>
+
+        <!--Button1-->
+        <Button
+            android:id="@+id/Exit"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/button_design"
+            android:onClick="Exit"
+            />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50">
+        </Space>
+
+        <!--Button2-->
+        <Button
+            android:id="@+id/Play"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/button_design"
+            android:onClick="Play"
+            />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50">
+        </Space>
+
+        <!--Button3-->
+        <Button
+            android:id="@+id/Intro"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/button_design"
+            android:onClick="Intro"
+            />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50">
+        </Space>
+
+        <!--Button4-->
+        <Button
+            android:id="@+id/Credits"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/button_design"
+            android:onClick="Credits"
+            />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50">
+        </Space>
+
+    </LinearLayout>
+
+</LinearLayout>

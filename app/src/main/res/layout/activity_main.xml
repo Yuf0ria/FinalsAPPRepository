@@ -13,6 +13,7 @@
 
     <!--The Game Screen-->
     <LinearLayout
+        android:id="@+id/roomchange"
         android:layout_width="400dp"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -36,6 +37,31 @@
 
             <!--Hunger-->
             <TextView
+                android:id="@+id/Score"
+                android:layout_width="168dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/anonymous_pro"
+                android:text="Score:"
+                android:textColor="@color/Color1"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/Fun"
+                android:layout_width="168dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/anonymous_pro"
+                android:text="Fun"
+                android:textColor="@color/Color1"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/progressBarfun"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
                 android:id="@+id/textView1"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
@@ -44,7 +70,7 @@
                 android:textStyle="bold"
                 android:textColor="@color/Color1" />
             <ProgressBar
-                android:id="@+id/progressBar1"
+                android:id="@+id/progressBarhunger"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="170dp"
                 android:layout_height="wrap_content" />
@@ -59,53 +85,60 @@
                 android:textStyle="bold"
                 android:textColor="@color/Color1" />
             <ProgressBar
-                android:id="@+id/progressBar2"
+                android:id="@+id/progressBarhygiene"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="170dp"
                 android:layout_height="wrap_content" />
 
             <!--Fun-->
             <TextView
-                android:id="@+id/textView3"
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/anonymous_pro"
-                android:text="Fun"
-                android:textStyle="bold"
-                android:textColor="@color/Color1" />
-            <ProgressBar
-                android:id="@+id/progressBar3"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="170dp"
-                android:layout_height="wrap_content" />
-
-            <!--Energy-->
-            <TextView
                 android:id="@+id/textView4"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/anonymous_pro"
                 android:text="Energy"
-                android:textStyle="bold"
-                android:textColor="@color/Color1" />
+                android:textColor="@color/Color1"
+                android:textStyle="bold" />
+
             <ProgressBar
-                android:id="@+id/progressBar4"
+                android:id="@+id/progressBarenergy"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="170dp"
                 android:layout_height="wrap_content" />
 
+            <!--Energy-->
+
         </LinearLayout>
 
         <!--Bob The Blob-->
+
+        <!--The Above The V V V V Thing-->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:orientation="vertical">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </Space>
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="370dp"
+                android:layout_height="230dp"
+                android:layout_gravity="center"
+                />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </Space>
         </LinearLayout>
 
-        <!--The Above The V V V V Thing-->
         <LinearLayout
             android:id="@+id/TextAboveV"
             android:layout_width="match_parent"
@@ -284,12 +317,13 @@
 
         <!--Button1-->
         <Button
-            android:id="@+id/button"
+            android:id="@+id/ButtonOne"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:background="@drawable/button_design"
+            android:onClick="ButtonOne"
             />
         <Space
             android:layout_width="wrap_content"
@@ -299,12 +333,13 @@
 
         <!--Button2-->
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/ButtonTwo"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:background="@drawable/button_design"
+            android:onClick="ButtonTwo"
             />
         <Space
             android:layout_width="wrap_content"
@@ -314,12 +349,13 @@
 
         <!--Button3-->
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/ButtonThree"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:background="@drawable/button_design"
+            android:onClick="ButtonThree"
             />
         <Space
             android:layout_width="wrap_content"
@@ -329,12 +365,13 @@
 
         <!--Button4-->
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/ButtonFour"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:background="@drawable/button_design"
+            android:onClick="ButtonFour"
             />
         <Space
             android:layout_width="wrap_content"
